@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import inspeccionInfo
-from django.http import FileResponse
+from django.http import FileResponse, JsonResponse
 
 # Create your views here.
 def index(request):
@@ -25,3 +25,8 @@ def descargarDxf(request,ind):
     inspeccion = inspeccionInfo.objects.get(id=ind)
     archivoDxf = open(inspeccion.archivoDxf,'rb')
     return FileResponse(archivoDxf,as_attachment=True)
+
+def consultarUsuario(request):
+    return JsonResponse({
+        'resp':'200'
+    })
