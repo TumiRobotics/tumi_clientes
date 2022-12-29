@@ -1,3 +1,8 @@
+function cerrarVentana()
+{
+    document.getElementById("vVid").get(0).pause()
+}
+
 document.addEventListener('DOMContentLoaded',()=>{
     
     video = document.getElementById("vVid")
