@@ -31,7 +31,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 <br>
             </div>
-            <div class="modal-body">
+            <div class="modal-body" style="display: block;" id="accesoCredenciales">
                 <br>
                 <strong>Hola Jaime, bienvenido a Tumi Robotics </strong>
                 <br>
@@ -39,6 +39,10 @@
                 <div class="col-12 px-2">
                     <input class="form-control" id="username" type="text" placeholder="Usuario">
                     <input class="form-control" id="contraUser" type="password" placeholder="Contraseña">
+                </div>
+                <br>
+                <div style="text-align: center;">
+                    <h5 style="color: red;" id="mensajeError"></h5>
                 </div>
                 <br>
                 <p style="font-size: 9px;">
@@ -49,8 +53,27 @@
                     <button style="width: 420px;background-color: #96EADA;" class="btn" onclick="ingresarUsuario()"><strong>Ingresar</strong></button>
                 </div>
             </div>
-            <div class="modal-footer">
-
+            <div class="modal-body" style="display: none;" id="accesoCodigo">
+                <br>
+                <strong>Hola Jaime, bienvenido a Tumi Robotics </strong>
+                <br>
+                <br>
+                <div class="col-12 px-2 form-control">
+                    <label>Ingrese el codigo de su celular</label>
+                    <input class="form-control" id="codigoUsuario" type="number" placeholder="Codigo ...">
+                </div>
+                <br>
+                <div style="text-align: center;">
+                    <h5 style="color: red;" id="codigoError"></h5>
+                </div>
+                <br>
+                <p style="font-size: 9px;">
+                    Te vamos a confirmar el numero por mensaje de texto. Sujeto a tarifas estándar para mensajes y datos.<u>Politicas de privacidad</u>
+                </p>
+                <br>
+                <div class="col-12 text-center">
+                    <button style="width: 420px;background-color: #96EADA;" class="btn" onclick="verificarCodigo()"><strong>Ingresar</strong></button>
+                </div>
             </div>
         </div>
     </div>

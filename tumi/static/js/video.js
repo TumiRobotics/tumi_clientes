@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded',()=>{
     vidStart = true
 
     video.addEventListener("canplay", () => { if (vidStart) {
-        video.play();
         vidStart = false;
     }});
 

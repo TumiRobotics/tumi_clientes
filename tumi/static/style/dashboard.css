@@ -426,3 +426,10 @@ time, mark, audio, video {
 .footer_direccion{
     width: 20%;
 }
+
+.video_css{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
