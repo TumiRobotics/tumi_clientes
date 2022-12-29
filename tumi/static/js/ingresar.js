@@ -13,7 +13,7 @@ function ingresarUsuario()
         else if(data.resp === '404')
         {
             console.log('Datos de usuario erroneos')
-            document.getElementById('mensajeError').innerHTML='Datos Erroneos!'
+            document.getElementById('mensajeError').innerHTML='El usuario o contraseña que ingresaste no está conectado a una cuenta. Encuentra tu cuenta e inicia sesión.'
         }
     })
 }
@@ -31,7 +31,7 @@ function verificarCodigo()
         else if(data.resp === '404')
         {
             console.log('Datos de usuario erroneos')
-            document.getElementById('codigoError').innerHTML='Codigo erroneo!'
+            document.getElementById('codigoError').innerHTML='El codigo que ingresaste no es el correcto. Consulte con el administrador el codigo correcto'
         }
     })
 }

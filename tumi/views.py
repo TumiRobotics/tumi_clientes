@@ -9,10 +9,7 @@ from twilio.rest import Client
 from django.contrib.auth.decorators import login_required
 
 
-codigo = ""
-for i in range(6):
-    codigo = codigo + str(random.randint(0,9))
-verification_code = codigo
+verification_code = "123456"
 usuarioLocal = ''
 contraLocal = ''
 
@@ -53,20 +50,23 @@ def consultarUsuario(request):
     usuario_unico = authenticate(request,username=username,password=contraUser)
     print(usuario_unico)
     if usuario_unico is not None:
+        """
         codigoAleatorio = ""
         for i in range(6):
             codigoAleatorio = codigoAleatorio + str(random.randint(0,9))
         print(codigoAleatorio)
         account_sid = 'ACa320b3c57138262ff6c01583d663baf6'
-        auth_token = '4b01bfb2ebebfcf58439c96d255da98d'
+        auth_token = '4423179f128c944a4ef2a4c156679d28'
         cliente = Client(account_sid,auth_token)
         usuario_acceso = CustomUser.objects.get(username=username)
+        print(usuario_acceso.phone_number)
         message = cliente.messages.create(
             body= f"Welcome to TumiRobotics, your verification code is {codigoAleatorio}",
             from_="+19786263159",
             to="+51" + str(usuario_acceso.phone_number)
         )
         verification_code = codigoAleatorio
+        """
         usuarioLocal = username
         contraLocal = contraUser
         return JsonResponse({
@@ -93,3 +93,7 @@ def verificarCodigoUsuario(request):
         return JsonResponse({
             'resp':'404',
         })
+    
+"""
+El correo electrónico o número de celular que ingresaste no está conectado a una cuenta. Encuentra tu cuenta e inicia sesión.
+"""
