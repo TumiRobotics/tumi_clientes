@@ -62,8 +62,8 @@ time, mark, audio, video {
 }
 .dashboard_menu{
     margin-left: 60px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 14px;
+    margin-bottom: 14px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -71,6 +71,9 @@ time, mark, audio, video {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 16px;
+}
+.dashboard_menu p {
+    margin-bottom: 0;
 }
 .dashboard_menu_img{
     /* height: 20px; */
@@ -104,6 +107,9 @@ time, mark, audio, video {
     rgba(234, 108, 54, 1);
     color: #FFFFFF;
     border-radius: 26px;
+}
+.dashboard_menu_principal p {
+    margin-bottom: 0;
 }
 
 .dashboard_menu_seccion_titulo{
@@ -238,6 +244,8 @@ time, mark, audio, video {
 }
 .dashboard_view_presentacion_opciones_texto{
     margin-left: 14px;
+    margin-right: 6px;
+    margin-bottom: 0;
 }
 .dashboard_view_presentacion_opciones_descarga{
     height: 40px;
@@ -324,6 +332,7 @@ time, mark, audio, video {
     font-family: 'Manrope';
     font-weight: 400;
     font-size: 18px;
+    text-align: center;
 }
 .dashboard_historico_info_contenedor{
     margin: 0 40px;
@@ -384,6 +393,7 @@ time, mark, audio, video {
 }
 .dashboard_historico_info_descarga_texto{
     margin-left: 14px;
+    margin-bottom: 0;
 }
 .dashboard_historico_info_btn{
     /* padding: 10px 20px; */
