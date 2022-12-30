@@ -11,4 +11,5 @@ urlpatterns = [
     path('descargarDxf/<str:ind>',views.descargarDxf,name='descargarDxf'),
     path('consultarUsuario',views.consultarUsuario,name='consultarUsuario'),
     path('verificarCodigoUsuario',views.verificarCodigoUsuario,name='verificarCodigoUsuario'),
+    path('log_out',views.log_out,name='log_out')
 ]

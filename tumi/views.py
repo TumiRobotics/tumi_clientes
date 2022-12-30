@@ -1,13 +1,13 @@
 from django.shortcuts import render
 from .models import inspeccionInfo
-from django.http import FileResponse, JsonResponse
+from django.http import FileResponse, JsonResponse, HttpResponseRedirect
 from django.contrib.auth import authenticate, login, logout
 from accounts.models import CustomUser
 import random
 import os
 from twilio.rest import Client
 from django.contrib.auth.decorators import login_required
-
+from django.urls import reverse
 
 verification_code = "123456"
 usuarioLocal = ''
@@ -97,3 +97,7 @@ def verificarCodigoUsuario(request):
 """
 El correo electrónico o número de celular que ingresaste no está conectado a una cuenta. Encuentra tu cuenta e inicia sesión.
 """
+
+def log_out(request):
+    logout(request)
+    return HttpResponseRedirect(reverse('tumi:index'))
