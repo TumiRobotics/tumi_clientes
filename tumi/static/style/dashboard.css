@@ -139,7 +139,7 @@ time, mark, audio, video {
     align-items: center;
 }
 .dashboard_view_presentacion_contenedor_1{
-    width: 47%;
+    width: 44%;
 }
 .dashboard_view_presentacion_texto_1{
     font-family: 'Montserrat', sans-serif;
@@ -171,15 +171,26 @@ time, mark, audio, video {
     font-size: 14px;
 }
 .dashboard_view_fechas{
+    display: inline-flex;
     padding: 8px 14px;
-    margin: 0 36px 0 18px;
+    margin: 0 26px 0 10px;
     background-color: #FFFFFF;
     border-radius: 10px;
     border: 1px solid 
     rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+    
+}
+.dashboard_view_fechas_text{
+    margin: 0 0 0 8px;
+    white-space: nowrap;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 14px;
+}
+.dashboard_view_fechas_img{
+    width: 16px;
+    height: auto;
 }
 .dashboard_view_icon{
     width: 26px;
@@ -319,7 +330,8 @@ time, mark, audio, video {
 }
 .dashboard_historico_card_icon{
     width: auto;
-    height: 56px;
+    max-width: 54px;
+    max-height: 46px;
     margin-bottom: 30px;
 }
 .dashboard_historico_card_text{

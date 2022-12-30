@@ -83,10 +83,13 @@
                     </div>
                     <div class="dashboard_view_inspeccion_opcion_row_1">
                         <div class="dashboard_view_inspeccion">Inspección 1,2,3,4-22</div>
-                        <div class="dashboard_view_fechas">02 Ene 2022 - 05 Dic 2022</div>
+                        <div class="dashboard_view_fechas">
+                            <img class="dashboard_view_fechas_img" src="{% static 'img/calendar.png' %}" alt="">
+                            <p class="dashboard_view_fechas_text">02 Ene 2022 - 05 Dic 2022</p>
+                        </div>
                         <img class="dashboard_view_icon" src="{% static 'img/lupa.png' %}" alt="">
-                        <img class="dashboard_view_icon" src="{% static 'img/lupa.png' %}" alt="">
-                        <img class="dashboard_view_icon" src="{% static 'img/lupa.png' %}" alt="">
+                        <img class="dashboard_view_icon" src="{% static 'img/mensaje.png' %}" alt="">
+                        <img class="dashboard_view_icon" src="{% static 'img/campana.png' %}" alt="">
                         <img class="dashboard_view_photo" src="{% static 'img/users/Mariel.png' %}" alt="">
                     </div>
                 </div>
@@ -119,19 +122,19 @@
                                     </div>
                                 </a>
                                 <button class="dashboard_historico_card" data-bs-toggle="modal" data-bs-target="#videoModal{{ inspeccion.id }}">
-                                    <img class="dashboard_historico_card_icon" src="{% static 'img/informen.png' %}" alt="icono">
+                                    <img class="dashboard_historico_card_icon" src="{% static 'img/video.png' %}" alt="icono">
                                     <div class="dashboard_historico_card_text"> 
                                         Video
                                     </div>
                                 </button>
                                 <a style="text-decoration: none;" href="{% url 'tumi:descargarLas' inspeccion.id %}" class="dashboard_historico_card">
-                                    <img class="dashboard_historico_card_icon" src="{% static 'img/informen.png' %}" alt="icono">
+                                    <img class="dashboard_historico_card_icon" src="{% static 'img/inspeccion.png' %}" alt="icono">
                                     <div class="dashboard_historico_card_text"> 
                                         Reconstrucción
                                     </div>
                                 </a>
                                 <a style="text-decoration: none;" href="{% url 'tumi:descargarDxf' inspeccion.id %}" class="dashboard_historico_card">
-                                    <img class="dashboard_historico_card_icon" src="{% static 'img/informen.png' %}" alt="icono">
+                                    <img class="dashboard_historico_card_icon" src="{% static 'img/puntos.png' %}" alt="icono">
                                     <div class="dashboard_historico_card_text"> 
                                         Mapa de puntos
                                     </div>
